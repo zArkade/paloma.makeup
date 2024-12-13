@@ -56,6 +56,7 @@ body, html {
 
 .name{
     margin-top: 10px;
+    margin-bottom: 5px;
     text-shadow: 2px 2px 4px #00000062;   
 }
 
@@ -104,14 +105,29 @@ body, html {
 }
 
 .link:hover{
+    outline: 1px solid #5a462cb6;
     box-shadow: 3px 3px 8px #000000a6;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     border: 1px solid #5a462cb6;
 }
 
 .lista:hover{
+    outline: 1px solid #5a462cb6;
     box-shadow: 3px 3px 8px #000000a6;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     border: 3px solid #5a462cb6;
     border-radius: 10px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: oblique;
+    bottom: 0;
+    position: fixed;
+    width: 80%;
+    a{
+        color: #fff;
+        text-shadow: 3px 3px 8px #000000a6;
+    }
 }
