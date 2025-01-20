@@ -69,9 +69,9 @@ body, html {
 }
 
 .sub-title{
-    margin: 9px 0px 9px 0px;
+    margin: 9px 0px;
     text-shadow: 2px 2px 4px #00000062;
-    font-size: 20;
+    font-size: 20px;
 }
 
 .simplefloat{
@@ -165,62 +165,241 @@ footer{
 
 /* ----------------------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
+/* Responsividade */
+
+@media (max-width: 1440px) {
+    body, html {
+        font-size: 14px;
+        max-width: 1440px;
+        max-height: 860px;
+    }
+
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
+    .background::before {
+        background-size: cover;
+        filter: blur(8px);
+    }
+
     .container {
+        margin: 0;
         width: 90%;
-        padding: 15px;
+        max-width: 300px;
+        border-radius: 20px;
+        z-index:auto ;
+    }
+
+    .top-header {
+        margin-bottom: 16px;
     }
 
     .profile {
-        width: 80px;
-        height: 80px;
+        width: 85px;
+        height: 85px;
     }
 
     .name {
-        font-size: 1.5rem;
+        font-size: 22px;
+        margin-top: 8px;
+        margin-bottom: 4px;
     }
 
     .sub-title {
-        font-size: 1rem;
+        font-size: 16px;
+        margin: 8px 0;
     }
 
     .simplefloat {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .link {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 100%;
-        border-radius: 0;
-        padding: 10px;
-    }
-
-    .profile {
-        width: 70px;
-        height: 70px;
-    }
-
-    .name {
-        font-size: 1.2rem;
-    }
-
-    .sub-title {
-        font-size: 0.9rem;
+        gap: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 
     .simplefloat ul {
-        flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .link {
-        padding: 5px 10px;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .link img {
+        max-width: 16px;
+    }
+
+    .link:hover {
+        transform: scale(1.03);
+    }
+
+    .lista:hover {
+        border-radius: 8px;
+    }
+
+    .list-click p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body, html {
+        font-size: 12px;
+        max-width: 1024px;
+        max-height: 860px;
+    }
+
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
+    .background::before {
+        background-size: cover;
+        filter: blur(6px);
+    }
+
+    .container {
+        margin: 0;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 20px;
+        z-index:auto ;
+    }
+
+    .top-header {
+        margin-bottom: 14px;
+    }
+
+    .profile {
+        width: 75px;
+        height: 75px;
+    }
+
+    .name {
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .sub-title {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .simplefloat {
+        gap: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .simplefloat ul {
+        gap: 15px;
+    }
+
+    .link {
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+
+    .link img {
+        max-width: 16px;
+    }
+
+    .link:hover {
+        transform: scale(0.93);
+    }
+
+    .lista:hover {
+        border-radius: 6px;
+    }
+
+    .list-click p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html {
+        font-size: 10px;
+        max-width: 768px;
+        max-height: 860px;
+    }
+
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+    }
+
+    .background::before {
+        background-size: cover;
+        filter: blur(4px);
+    }
+
+    .container {
+        margin: 0;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 20px;
+        z-index:auto ;
+    }
+
+    .top-header {
+        margin-bottom: 14px;
+    }
+
+    .profile {
+        width: 85px;
+        height: 85px;
+    }
+
+    .name {
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+        margin: 8px 0;
+    }
+
+    .simplefloat {
+        gap: 15px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .simplefloat ul {
+        gap: 15px;
+    }
+
+    .link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .link img {
+        max-width: 16px;
+    }
+
+    .link:hover {
+        transform: scale(0.83);
+    }
+
+    .lista:hover {
+        border-radius: 8px;
+    }
+
+    .list-click p {
+        font-size: 14px;
     }
 }

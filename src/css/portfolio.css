@@ -55,7 +55,6 @@ header h3 {
 main {
     position: relative;
     z-index: 1;
-    width: 100%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
@@ -64,7 +63,6 @@ main {
 .sobre-prin {
     display: flex;
     max-width: 1200px;
-    width: 100%;
     gap: 30px;
     align-items: center;
     background-color: rgba(233, 222, 215, 0.7);
@@ -97,7 +95,6 @@ main {
     flex: 2; 
     max-width: 600px;
     color: #332719;
-    font-size: 1.2rem;
     line-height: 1.6;
     text-align: justify;
     padding: 10px;
@@ -115,7 +112,6 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    width: 100%;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -162,7 +158,6 @@ h2 {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
     color: #332719;
     font-size: 22px;
@@ -180,7 +175,7 @@ h2 {
     border: 2px solid #000;
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 22px;
     text-align: center;
     color: #000;
     background-color: transparent;
@@ -209,8 +204,8 @@ h2 {
 }
 
 .studio img {
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -237,3 +232,325 @@ footer a:hover {
 /* ----------------------------------------------------------------------------------- */
 
 /* Responsividade */
+
+@media (max-width: 1440px) {
+    body, html{
+        font-size: 14px;
+        max-width: 1440px;
+        max-height: 860px;
+    }
+
+    header {
+        max-width: 100%;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h3 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        max-width: 900px;
+        align-items: center;
+    }
+
+    .sobre-prin {
+        max-width: 900px;
+        align-items: center;
+        display: flex;
+        gap: 25px;
+        padding: 15px;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    .photo {
+        flex: 1;
+        max-width: 350px;
+        max-height: 350px;
+        border-radius: 15%;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .descricao p {
+        flex: 2;
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .servicos {
+        max-width: 900px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .servico-item {
+        max-width: 300px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .servico-item p {
+        padding-top: 0px;
+        padding-bottom: 15px;
+        font-size: 18px; 
+    }
+
+    .atendimento {
+        max-width: 900px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .atendimentodesc {
+        font-size: 18px;
+    }
+
+    .chamativa {
+        font-size: 24px;
+    }
+
+    .contact-button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .studio {
+        max-width: 350px;
+        max-height: 450px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    body, html{
+        font-size: 14px;
+        max-width: 1024px;
+        max-height: 860px;
+    }
+
+    header {
+        max-width: 100%;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h3 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        max-width: 900px;
+        align-items: center;
+    }
+
+    .sobre-prin {
+        max-width: 900px;
+        align-items: center;
+        display: flex;
+        gap: 25px;
+        padding: 15px;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    .photo {
+        flex: 1;
+        max-width: 350px;
+        max-height: 350px;
+        border-radius: 15%;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .descricao p {
+        flex: 2;
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .servicos {
+        max-width: 900px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .servico-item {
+        max-width: 300px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .servico-item p {
+        padding-top: 0px;
+        padding-bottom: 15px;
+        font-size: 18px; 
+    }
+
+    .atendimento {
+        max-width: 900px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .atendimentodesc {
+        font-size: 18px;
+    }
+
+    .chamativa {
+        font-size: 24px;
+    }
+
+    .contact-button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .studio {
+        max-width: 350px;
+        max-height: 450px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    body, html{
+        font-size: 12px;
+        max-width: 768px;
+        max-height: auto;
+    }
+
+    header {
+        max-width: 100%;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h3 {
+        font-size: 1rem;
+    }
+
+    main {
+        max-width: 580px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .sobre-prin {
+        max-width: 580px;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        border-radius: 25px;
+        padding: 15px;
+    }
+
+    .photo {
+        flex: 1;
+        max-width: 350px;
+        max-height: 350px;
+        border-radius: 15%;
+    }
+
+    .photo img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .descricao p {
+        flex: 2;
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .servicos {
+        max-width: 900px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .servico-item {
+        max-width: 300px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .servico-item p {
+        padding-top: 0px;
+        padding-bottom: 15px;
+        font-size: 18px; 
+    }
+
+    .atendimento {
+        max-width: 900px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .atendimentodesc {
+        font-size: 18px;
+    }
+
+    .chamativa {
+        font-size: 24px;
+    }
+
+    .contact-button {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .studio {
+        max-width: 350px;
+        max-height: 450px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+
+    .studio img {
+        max-width: 350px;
+        max-height: 450px;
+        object-fit: cover;
+    }
+}
