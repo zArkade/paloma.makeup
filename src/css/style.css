@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -34,6 +38,10 @@ body, html {
 }
 
 /* ----------------------------------------------------------------------------------- */
+main{
+    width: 300px;
+}
+
 
 .container {
     color: white;
@@ -43,8 +51,8 @@ body, html {
     padding: 20px;
     border: 2px solid #33271986;
     text-align: center;
-    width: 300px;
-    max-width: 80%;
+    width: 500px;
+    max-width: 90%;
     backdrop-filter: blur(1px);
     overflow: hidden;
 }
@@ -149,6 +157,7 @@ footer{
     font-style: oblique;
     bottom: 0;
     position: fixed;
+    height: fit-content;
     width: 100%;
     background-color: #33271986;
     font-size: 16px;
@@ -188,8 +197,7 @@ footer{
 
     .container {
         margin: 0;
-        width: 90%;
-        max-width: 300px;
+        width: 100%;
         border-radius: 20px;
         z-index:auto ;
     }
@@ -244,6 +252,12 @@ footer{
     .list-click p {
         font-size: 14px;
     }
+
+    footer{
+        height: 50px;
+        margin-top: 0px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -267,8 +281,7 @@ footer{
 
     .container {
         margin: 0;
-        width: 90%;
-        max-width: 300px;
+        width: 100%;
         border-radius: 20px;
         z-index:auto ;
     }
@@ -283,7 +296,7 @@ footer{
     }
 
     .name {
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 8px;
         margin-bottom: 4px;
     }
@@ -323,6 +336,12 @@ footer{
     .list-click p {
         font-size: 14px;
     }
+
+    footer{
+        height: 50px;
+        margin-top: 0px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -346,8 +365,7 @@ footer{
 
     .container {
         margin: 0;
-        width: 90%;
-        max-width: 300px;
+        width: 100%;
         border-radius: 20px;
         z-index:auto ;
     }
@@ -401,5 +419,11 @@ footer{
 
     .list-click p {
         font-size: 14px;
+    }
+
+    footer{
+        height: 40px;
+        margin-top: 0px;
+        font-size: 12px;
     }
 }
